@@ -1,0 +1,107 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSQL_Churn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "customerID",
+				"type": "varchar"
+			},
+			{
+				"name": "gender",
+				"type": "varchar"
+			},
+			{
+				"name": "SeniorCitizen",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Partner",
+				"type": "varchar"
+			},
+			{
+				"name": "Dependents",
+				"type": "varchar"
+			},
+			{
+				"name": "tenure",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PhoneService",
+				"type": "varchar"
+			},
+			{
+				"name": "MultipleLines",
+				"type": "varchar"
+			},
+			{
+				"name": "InternetService",
+				"type": "varchar"
+			},
+			{
+				"name": "OnlineSecurity",
+				"type": "varchar"
+			},
+			{
+				"name": "OnlineBackup",
+				"type": "varchar"
+			},
+			{
+				"name": "DeviceProtection",
+				"type": "varchar"
+			},
+			{
+				"name": "TechSupport",
+				"type": "varchar"
+			},
+			{
+				"name": "StreamingTV",
+				"type": "varchar"
+			},
+			{
+				"name": "StreamingMovies",
+				"type": "varchar"
+			},
+			{
+				"name": "Contract",
+				"type": "varchar"
+			},
+			{
+				"name": "PaperlessBilling",
+				"type": "varchar"
+			},
+			{
+				"name": "PaymentMethod",
+				"type": "varchar"
+			},
+			{
+				"name": "MonthlyCharges",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "TotalCharges",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "Churn",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TelecomChurn"
+		}
+	}
+}
