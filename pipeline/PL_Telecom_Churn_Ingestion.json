@@ -15,8 +15,320 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
-				}
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "customerID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "customerID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "gender",
+									"type": "String"
+								},
+								"sink": {
+									"name": "gender",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "SeniorCitizen",
+									"type": "String"
+								},
+								"sink": {
+									"name": "SeniorCitizen",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Partner",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Partner",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Dependents",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Dependents",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "tenure",
+									"type": "String"
+								},
+								"sink": {
+									"name": "tenure",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PhoneService",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PhoneService",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "MultipleLines",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MultipleLines",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "InternetService",
+									"type": "String"
+								},
+								"sink": {
+									"name": "InternetService",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "OnlineSecurity",
+									"type": "String"
+								},
+								"sink": {
+									"name": "OnlineSecurity",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "OnlineBackup",
+									"type": "String"
+								},
+								"sink": {
+									"name": "OnlineBackup",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DeviceProtection",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DeviceProtection",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "TechSupport",
+									"type": "String"
+								},
+								"sink": {
+									"name": "TechSupport",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "StreamingTV",
+									"type": "String"
+								},
+								"sink": {
+									"name": "StreamingTV",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "StreamingMovies",
+									"type": "String"
+								},
+								"sink": {
+									"name": "StreamingMovies",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Contract",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Contract",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PaperlessBilling",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PaperlessBilling",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PaymentMethod",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PaymentMethod",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "MonthlyCharges",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MonthlyCharges",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "TotalCharges",
+									"type": "String"
+								},
+								"sink": {
+									"name": "TotalCharges",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Churn",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Churn",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Churn Flag",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Churn Flag",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Tenure Group",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Tenure Group",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Revenue Loss",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Revenue Loss",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Revenue Column",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Monthly Revenue Column",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Customer Lifetime Value",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Customer Lifetime Value",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Prop_26",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Prop_26",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Prop_27",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Prop_27",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Prop_28",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Prop_28",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_Telecom_Churn_Raw",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
