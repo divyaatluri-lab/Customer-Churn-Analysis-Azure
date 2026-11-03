@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "Telco Customer Churn Cleaned.csv.csv",
 				"container": "churn-raw-data"
 			},
 			"columnDelimiter": ",",
