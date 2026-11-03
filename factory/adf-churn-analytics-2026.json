@@ -1,0 +1,15 @@
+{
+	"name": "adf-churn-analytics-2026",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c14d817d-ae32-400b-abe0-dae1161b128d",
+		"tenantId": "b245314a-80e9-482b-8cee-70c3e061893d"
+	}
+}
