@@ -1,0 +1,11 @@
+{
+	"name": "LS_ADLS_Churn_Cleaned",
+	"properties": {
+		"description": "Connection to cleaned churn data in ADLS Gen2",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://churnsynapseadls.dfs.core.windows.net/"
+		}
+	}
+}
