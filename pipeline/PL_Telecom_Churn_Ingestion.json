@@ -21,7 +21,7 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": false,
-							"wildcardFolderPath": "\tcustomer-churn-cleaned",
+							"wildcardFolderPath": "customer-churn-cleaned",
 							"wildcardFileName": "*.parquet",
 							"enablePartitionDiscovery": false
 						},
@@ -30,10 +30,13 @@
 						}
 					},
 					"sink": {
-						"type": "AzureSqlSink",
-						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": true,
-						"disableMetricsCollection": false
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
 					},
 					"enableStaging": false,
 					"translator": {
@@ -311,7 +314,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "DS_Churn_Cleaned_Parquet",
 						"type": "DatasetReference"
 					}
 				]
