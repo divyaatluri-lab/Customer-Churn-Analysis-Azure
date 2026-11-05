@@ -30,13 +30,9 @@
 						}
 					},
 					"sink": {
-						"type": "ParquetSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "ParquetWriteSettings"
-						}
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -314,7 +310,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_Churn_Cleaned_Parquet",
+						"referenceName": "DS_TelecomChurn_AzureSQL",
 						"type": "DatasetReference"
 					}
 				]

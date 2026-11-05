@@ -1,0 +1,16 @@
+{
+	"name": "DS_TelecomChurn_AzureSQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSQL_Churn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TelecomChurn"
+		}
+	}
+}
