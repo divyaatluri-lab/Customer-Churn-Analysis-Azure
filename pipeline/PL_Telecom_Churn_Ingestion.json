@@ -16,14 +16,16 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
+						"type": "ParquetSource",
 						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
+							"type": "AzureBlobFSReadSettings",
+							"recursive": false,
+							"wildcardFolderPath": "\tcustomer-churn-cleaned",
+							"wildcardFileName": "*.parquet",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "ParquetReadSettings"
 						}
 					},
 					"sink": {
@@ -302,7 +304,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DS_Telecom_Churn_Raw",
+						"referenceName": "DS_Churn_Cleaned_Parquet",
 						"type": "DatasetReference"
 					}
 				],

@@ -1,0 +1,20 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_Churn_Cleaned",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "customer-churn-cleaned",
+				"fileSystem": "churn-cleaned"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
