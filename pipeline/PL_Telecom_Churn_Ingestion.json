@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "Copy_Telecom_Churn_CSV",
+				"description": "Copy cleaned customer churn data from ADLS Gen2 to Azure SQL",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
